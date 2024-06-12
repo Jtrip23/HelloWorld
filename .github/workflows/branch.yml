@@ -29,7 +29,7 @@ jobs:
       - name: Branch Creation
         uses: peterjgrainger/action-create-branch@v2.2.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: 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
         with:
          branch: 'release-notes'
 
