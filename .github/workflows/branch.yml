@@ -31,5 +31,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.HUB_TOKEN }}
         with:
-         branch: 'release-notes'
+         branch: 'feature_cloudhub'
+         
 
