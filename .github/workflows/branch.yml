@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: [ "feature_cloudhub" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "feature_cloudhub" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.HUB_TOKEN }}
         with:
-         branch: 'feature_cloudhub , Dev_cloudhub , Integration_Cloudhub' 
+         branch: 'test_branch' 
          
          
 
