@@ -26,11 +26,28 @@ jobs:
       - uses: actions/checkout@v4
      
       
-      - name: Branch Creation
-        uses: peterjgrainger/action-create-branch@v2.2.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.HUB_TOKEN }}
+   #     - name: Branch Creation
+   #       uses: peterjgrainger/action-create-branch@v2.2.0
+   #       env:
+   #         GITHUB_TOKEN: ${{ secrets.HUB_TOKEN }}
+   #       with:
+    #       branch: 'production_cloudhub'
+
+      - name: Create branches
+  # You may pin to the exact commit or the version.
+  # uses: borgespro/create-squad-release-branches@3a8bd5758f8009609b14ebef856ba82cb1e5360b
+        uses: borgespro/create-squad-release-branches@v1.0.6
         with:
-         branch: 'production_cloudhub'
+    # Prefix for new branch name
+          prefix: jay,tripathi,branch1
+    # The branch to create
+       #   branch: # optional, default is ${GITHUB_HEAD_REF}
+    # The SHA1 value for the branch reference
+        #    sha: # optional
+    # A list of squad names
+      #      squads: # optional
+    # Github token
+      #      GITHUB_TOKEN: # optional
+          
          
 
